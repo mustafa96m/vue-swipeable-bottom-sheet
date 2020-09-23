@@ -74,7 +74,7 @@ export default {
                     }
                     break;
                 case "open":
-                    if (this.startY - evt.center.y < -120) {
+                    if (this.startY - evt.center.y < -60) {
                         this.state = "close";
                     }
                     break;
@@ -93,7 +93,7 @@ export default {
                 case "open":
                     return this.rect.height * this.openY;
                 case "half":
-                    return this.rect.height * this.halfY;
+                    return this.rect.height * this.openY;
                 default:
                     return this.y;
             }
