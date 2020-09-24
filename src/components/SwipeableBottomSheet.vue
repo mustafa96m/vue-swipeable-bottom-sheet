@@ -1,6 +1,6 @@
 <template>
 <div class="wrapper" :data-open="state === 'open' ? 1 : 0">
-    <div class="bg" @click="() => setState('half')"></div>
+    <div class="bg" @click="() => setState('close')"></div>
     <div ref="card" class="card" :data-state="isMove ? 'move' : state" :style="{ top: `${isMove ? y : calcY()}px` }">
         <div class="pan-area" ref="pan">
             <div class="bar" ref="bar"></div>
